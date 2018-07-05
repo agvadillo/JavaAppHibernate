@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="javaapphibernate.Contact" table="contact">
+    <id column="pk_id_contact" name="id">
+      <generator class="identity"/>
+    </id>
+    <property column="name" name="name" type="string"/>
+    <property column="lastname" name="lastname" type="string"/>
+    <property column="address" name="address" type="string"/>
+    <set cascade="save-update, delete, delete-orphan" fetch="select" lazy="true" name="phones" table="phone">
+      <key>
+        <column name="fk_id_contact" not-null="true"/>
+      </key>
+      <one-to-many class="javaapphibernate.Phone"/>
+    </set>
+    <set cascade="save-update, delete, delete-orphan" fetch="select" lazy="false" name="teams" table="contact_team">
+      <key>
+        <column name="fk_id_contact" not-null="true"/>
+      </key>
+      <many-to-many class="javaapphibernate.Team" column="fk_id_team"/>
+    </set>
+  </class>
+</hibernate-mapping>

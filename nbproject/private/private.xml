@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/Avk/Documents/111Mil/JavaApps/JavaAppHibernate/src/javaapphibernate/Team.java</file>
+            <file>file:/Users/Avk/Documents/111Mil/JavaApps/JavaAppHibernate/src/hibernate.cfg.xml</file>
+            <file>file:/Users/Avk/Documents/111Mil/JavaApps/JavaAppHibernate/src/mappers/Contact.hbm.xml</file>
+            <file>file:/Users/Avk/Documents/111Mil/JavaApps/JavaAppHibernate/src/javaapphibernate/Manager.java</file>
+            <file>file:/Users/Avk/Documents/111Mil/JavaApps/JavaAppHibernate/src/javaapphibernate/HibernateUtil.java</file>
+            <file>file:/Users/Avk/Documents/111Mil/JavaApps/JavaAppHibernate/src/javaapphibernate/PhoneAnnotation.java</file>
+            <file>file:/Users/Avk/Documents/111Mil/JavaApps/JavaAppHibernate/src/javaapphibernate/Contact.java</file>
+            <file>file:/Users/Avk/Documents/111Mil/JavaApps/JavaAppHibernate/src/javaapphibernate/Phone.java</file>
+            <file>file:/Users/Avk/Documents/111Mil/JavaApps/JavaAppHibernate/src/javaapphibernate/JavaAppHibernate.java</file>
+            <file>file:/Users/Avk/Documents/111Mil/JavaApps/JavaAppHibernate/src/mappers/Team.hbm.xml</file>
+            <file>file:/Users/Avk/Documents/111Mil/JavaApps/JavaAppHibernate/src/mappers/Phone.hbm.xml</file>
+            <file>file:/Users/Avk/Documents/111Mil/JavaApps/JavaAppHibernate/src/javaapphibernate/ContactAnnotation.java</file>
+            <file>file:/Users/Avk/Documents/111Mil/JavaApps/JavaAppHibernate/src/javaapphibernate/TeamAnnotation.java</file>
+            <file>file:/Users/Avk/Documents/111Mil/JavaApps/JavaAppHibernate/src/javaapphibernate/JavaAppHibernateAnnotation.java</file>
+        </group>
+    </open-files>
+</project-private>

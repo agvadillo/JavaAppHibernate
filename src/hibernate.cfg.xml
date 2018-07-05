@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://localhost/javaapphibernate</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password"/>
+    <!-- More info at: https://docs.jboss.org/hibernate/orm/3.3/reference/en/html/session-configuration.html -->
+    <property name="connection.pool_size">1</property>
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="show_sql">true</property>
+    <!-- hbm2ddl.auto values: "validate", "update", "create", y "create-drop" -->
+    <property name="hbm2ddl.auto">validate</property>
+    <!-- File mapping fos xmls -->
+    <!--mapping resource="mappers/Contact.hbm.xml"/>
+        <mapping resource="mappers/Phone.hbm.xml"/>
+        <mapping resource="mappers/Group.hbm.xml"/-->
+    <!-- File mapping fos annotations -->
+    <!--mapping class="javaapphibernate.ContactAnnotation"/>
+        <mapping class="javaapphibernate.PhoneAnnotation"/>
+        <mapping class="javaapphibernate.GroupAnnotation"/-->
+  </session-factory>
+</hibernate-configuration>

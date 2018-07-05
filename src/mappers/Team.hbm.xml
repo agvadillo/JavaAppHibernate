@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="javaapphibernate.Team" table="team">
+    <id column="pk_id_team" name="id">
+      <generator class="identity"/>
+    </id>
+    <property column="name" name="name" type="string"/>
+    <set cascade="save-update, delete, delete-orphan" fetch="select" lazy="false" name="contacts" table="contact_team">
+      <key>
+        <column name="fk_id_team" not-null="true"/>
+      </key>
+      <many-to-many class="javaapphibernate.Contact" column="fk_id_contact"/>
+    </set>
+  </class>
+</hibernate-mapping>

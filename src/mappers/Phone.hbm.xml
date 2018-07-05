@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="javaapphibernate.Phone" table="phone">
+        <id name="id" column="pk_id_phone">
+            <generator class="identity" />
+        </id>
+        <property name="number" type="long" column="number" />
+        
+        <many-to-one name="contact" class="javaapphibernate.Contact" fetch="select">
+            <column name="fk_id_contact" not-null="false" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
